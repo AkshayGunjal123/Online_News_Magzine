@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="Online_News_Magzine.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Online News Magzine</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/blog.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form runat="server">
+    <div>
+       
+         <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+        
+          <div class="col-4 text-center">
+            <h3 class=" text-dark font-weight-bold">Online News Magzine</h3>
+          </div>
+          
+        </div>
+      
+        <nav class="nav">
+          <a class="p-2 text-muted font-weight-bold" href="HomePage.aspx">Home</a>
+          <asp:Button ID="Button1" class="p-2 ml-3 text-muted  font-weight-bold btn btn-outline-danger" runat="server" Text="Covid-19" OnClick="Button1_Click" />
+          <asp:Button ID="Button2" class="p-2 ml-3 text-muted font-weight-bold btn btn-outline-danger" runat="server"  Text="WorldNews" OnClick="Button2_Click" />
+          <asp:Button ID="Button3" class="p-2 ml-3 text-muted font-weight-bold btn btn-outline-danger" runat="server" Text="Politics" OnClick="Button3_Click" />
+          <asp:Button ID="Button4" class="p-2 ml-3 text-muted font-weight-bold btn btn-outline-danger" runat="server" Text="Bollywood" OnClick="Button4_Click" />
+          <asp:Button ID="Button5" class="p-2 ml-3 text-muted font-weight-bold btn btn-outline-danger" runat="server" Text="Cricket" OnClick="Button5_Click" />
+          <asp:Button ID="Button6" class="p-2 ml-3 text-muted font-weight-bold btn btn-outline-danger" runat="server" Text="Technology" OnClick="Button6_Click" />         
+          <asp:Button ID="Button7" class="p-2 ml-3 text-muted  font-weight-bold btn btn-outline-danger"  runat="server" Text="Sign in" OnClick="Button7_Click" />
+          <asp:Button ID="Button8" class="p-2 ml-3 text-muted  font-weight-bold btn btn-outline-primary "  runat="server" Text="Sign up" OnClick="Button8_Click" />
+          <asp:Button ID="Button9" class="p-2 ml-3 text-muted  font-weight-bold btn btn-outline-danger"  runat="server" Text="Admin Sign in" OnClick="Button9_Click" />
+
+        </nav>
+  
+    </header>
+    </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+</form>
+
+ <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.0.0/assets/js/vendor/holder.min.js"></script>
+    <script>
+        Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+        });
+    </script>
+</body>
+</html>
